@@ -1,0 +1,9 @@
+.brand-name {
+  background-color: rgb(162, 183, 201);
+  margin: 6px;
+  padding: 5px;
+}
+
+.threeDots{
+    display: flex;
+}

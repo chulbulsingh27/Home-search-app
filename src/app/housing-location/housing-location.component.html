@@ -1,0 +1,11 @@
+<div class="ImagePlusText">
+    <div class="listing">
+        <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{housingLocation.name}}">
+    </div>
+    <div class="AllText">
+        <h2 class="listing-heading">{{ housingLocation.name }}</h2>
+        <p class="listing-location">{{ housingLocation.city}}, {{housingLocation.state }}</p>
+        <p style="font-weight: 200; font-size: medium; color:rgb(48, 52, 52);"> Serial Number: {{housingLocation.id + 1}}</p>
+        <a [routerLink]="['/details', housingLocation.id]">Learn More</a>
+    </div>
+</div> 

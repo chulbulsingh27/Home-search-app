@@ -1,0 +1,41 @@
+
+
+.search-btn {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background-color: blueviolet;
+  color:black;
+  cursor: pointer;
+  
+  border-radius: 8px;
+}
+
+.filter-text{
+    border:1px solid black;
+    outline: none;
+    margin:10px;
+    padding:10px;
+    border-radius: 10px;
+
+}
+.form1{
+    margin:20px;
+}
+.results{
+    font-size: large;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 499px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
